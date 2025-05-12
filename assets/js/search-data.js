@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
+  },{id: "nav-open-source",
+          title: "open source",
+          description: "Something cool.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/opensource/";
+          },
+        },{id: "nav-blog",
           title: "blog",
           description: "",
           section: "Navigation",
@@ -23,492 +30,234 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-a-post-with-plotly-js",
+        },{id: "post-embodied-ai-unlimited-training-data",
         
-          title: "a post with plotly.js",
-        
-        description: "this is what included plotly.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/plotly/";
-          
-        },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-a-post-with-tabs",
-        
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/tabs/";
-          
-        },
-      },{id: "post-a-post-with-typograms",
-        
-          title: "a post with typograms",
-        
-        description: "this is what included typograms code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/typograms/";
-          
-        },
-      },{id: "post-a-post-that-can-be-cited",
-        
-          title: "a post that can be cited",
-        
-        description: "this is what a post that can be cited looks like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/post-citation/";
-          
-        },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/pseudocode/";
-          
-        },
-      },{id: "post-a-post-with-code-diff",
-        
-          title: "a post with code diff",
-        
-        description: "this is how you can display code diffs",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/code-diff/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
-          
-        },
-      },{id: "post-a-post-with-vega-lite",
-        
-          title: "a post with vega lite",
-        
-        description: "this is what included vega lite code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/vega-lite/";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'Embodied AI == Unlimited Training Data <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "",
         section: "Posts",
         handler: () => {
           
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+            window.open("https://medium.com/@kentsui/embodied-ai-unlimited-training-data-78f807a4f3b6?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-redirect",
+      },{id: "post-large-language-model-2023-review-and-2024-outlook",
         
-          title: "a post with redirect",
+          title: 'Large Language Model 2023 Review and 2024 Outlook <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "you can also redirect to assets like pdf",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/assets/pdf/example_pdf.pdf";
+            window.open("https://medium.com/@kentsui/large-language-model-2023-review-and-2024-outlook-cbd5211cf49b?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-diagrams",
+      },{id: "post-paper-digest-think-before-you-speak-training-language-models-with-pause-tokens",
         
-          title: "a post with diagrams",
+          title: 'Paper Digest: Think before you speak: Training Language Models With Pause Tokens <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with diagrams",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/diagrams/";
+            window.open("https://medium.com/@kentsui/paper-digest-think-before-you-speak-training-language-models-with-pause-tokens-42be8c1ae785?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-distill-style-blog-post",
+      },{id: "post-paper-digest-how-language-model-hallucinations-can-snowball",
         
-          title: "a distill-style blog post",
+          title: 'Paper Digest: How Language Model Hallucinations Can Snowball <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a distill-style blog post and main elements",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/distill/";
+            window.open("https://medium.com/@kentsui/paper-digest-how-language-model-hallucinations-can-snowball-baaedd3d4231?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-twitter",
+      },{id: "post-ai-machine-learning-2022-review-and-2023-outlook-a-practitioner-s-perspective",
         
-          title: "a post with twitter",
+          title: 'AI/Machine Learning 2022 Review and 2023 Outlook — A Practitioner’s Perspective <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with twitter",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2020/twitter/";
+            window.open("https://medium.com/@kentsui/ai-machine-learning-2022-review-and-2023-outlook-a-practitioners-perspective-9d1b34c0a21f?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-disqus-comments",
+      },{id: "post-if-you-know-sql-you-probably-understand-transformer-bert-and-gpt",
         
-          title: "a post with disqus comments",
+          title: 'If you know SQL, you probably understand Transformer, BERT and GPT. <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with disqus comments",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/disqus-comments/";
+            window.open("https://medium.com/data-science/if-you-know-sql-you-probably-understand-transformer-bert-and-gpt-7b197cb48d24?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-math",
+      },{id: "post-how-xlnet-combines-the-best-of-gpt-and-bert",
         
-          title: "a post with math",
+          title: 'How XLNet combines the best of GPT and BERT <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with some math",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/math/";
+            window.open("https://medium.com/data-science/understanding-the-difference-of-gpt-bert-and-xlnet-in-2-min-8aa917330ad1?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-code",
+      },{id: "post-do-you-understand-it",
         
-          title: "a post with code",
+          title: 'Do you Understand it? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with some code",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/code/";
+            window.open("https://medium.com/data-science/do-you-understand-it-b0b62657e836?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-images",
+      },{id: "post-why-every-data-scientist-shall-read-the-book-of-why-by-judea-pearl",
         
-          title: "a post with images",
+          title: 'Why every data scientist shall read “The Book of Why” by Judea Pearl... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "this is what included images could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/images/";
+            window.open("https://medium.com/data-science/why-every-data-scientist-shall-read-the-book-of-why-by-judea-pearl-e2dad84b3f9d?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "post-a-post-with-formatting-and-links",
+      },{id: "post-balance-it-s-how-everything-behaves-except-most-of-us",
         
-          title: "a post with formatting and links",
+          title: 'Balance – It’s how everything behaves except most of us. <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "march &amp; april, looking forward to summer",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/formatting-and-links/";
+            window.open("https://medium.com/@kentsui/balance-its-how-everything-behaves-but-most-of-us-do-not-aa3ad0ab8a26?source=rss-e73f134a80------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+      },{id: "post-perhaps-the-simplest-introduction-of-adversarial-examples-ever",
+        
+          title: "Perhaps the Simplest Introduction of Adversarial Examples Ever",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/adversarial-examples/";
+          
+        },
+      },{id: "post-why-do-we-need-analytics",
+        
+          title: "Why do we need analytics?",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/why-do-we-need-analytics/";
+          
+        },
+      },{id: "post-everything-is-a-representation",
+        
+          title: "Everything is a representation.",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2018/everything-is-a-representation/";
+          
+        },
+      },{id: "post-visual-explanation-of-logistic-regression",
+        
+          title: "Visual Explanation of Logistic Regression",
+        
+        description: "Forget about the maths.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2017/visual-explanation-of-logistic-regression/";
+          
+        },
+      },{id: "projects-low-latency-cpu-based-educational-value-classifier-with-generic-educational-value",
+          title: 'Low Latency CPU Based Educational Value Classifier With Generic Educational Value',
+          description: "The low latency classifier and fineweb-edu-fasttext-classifier present a promising way to 1) filter dataset in a cheap and scalable way and 2) evaluating pretraining dataset at scale, before pretraining, that will help researchers and practitioners with less compute resources to train large/ small language model in a more efficient way.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-️anyclassifier-generating-synthetic-data-for-text-classification",
+          title: '∞🧙🏼‍♂️AnyClassifier - Generating Synthetic Data For Text Classification',
+          description: "AnyClassifier is a framework that empowers you to create high-performance classifiers without any labels or data, using minimal code. It&#39;s designed to revolutionize the machine learning development process by eliminating the need for extensive data curation and labeling.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-fasttext-model-for-pretraining-data-curation",
+          title: 'FastText Model for Pretraining Data Curation',
+          description: "A collections of FastText classifiers that classifies high educational value data, maths domain, code domain, etc.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-the-oig-dataset",
+          title: 'THE OIG DATASET',
+          description: "The Open Instruction Generalist (OIG) dataset is a large open source instruction dataset that currently contains ~43M instructions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-goformer-language-model-that-plays-go",
+          title: 'GoFormer - Language Model That Plays Go',
+          description: "Can GoFormer perform reasonably well just by next move (token) prediction, without MCTS?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-longtalk-cot-v0-1-a-very-long-chain-of-thought-dataset-for-reasoning-model-post-training",
+          title: 'LongTalk-CoT v0.1 - A Very Long Chain-of-Thought Dataset for Reasoning Model Post-Training',
+          description: "A dataset designed for post training o1-like reasoning model. Each response is prompted using QwQ-32B-Preview, and specifically handcrafted system message that encourages more vocalised thinking, and self reflection.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-mixturevitae-a-permissive-high-performance-open-access-pretraining-dataset",
+          title: 'MixtureVitae - A Permissive, High-Performance, Open-Access Pretraining Dataset',
+          description: "MixtureVitae is an open-source, permissive, high-quality dataset designed for pretraining large language models (LLMs) across a wide variety of modalities, domains, and languages. The goal of MixtureVitae is to accelerate the development of transparent, open-access AI while lowering legal uncertainty around copyright and data provenance.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-valid-video-audio-large-interleaved-dataset",
+          title: 'VALID (Video-Audio Large Interleaved Dataset)',
+          description: "The VALID (Video-Audio Large Interleaved Dataset) is a multimodal dataset comprising approximately 720,000 Creative Commons licensed videos crawled from YouTube, and processed into audio-video-text data records for machine learning research. The dataset provides a unique opportunity for training models to understand relationships between modalities such as video frames, audio clips, and multilingual textual data, making it suitable for applications like multimodal representation learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6B%65%6E%68%6B%74%73%75%69@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/kenhktsui", "_blank");
         },
       },{
         id: 'social-inspire',
         title: 'Inspire HEP',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://inspirehep.net/authors/", "_blank");
+        },
+      },{
+        id: 'social-medium',
+        title: 'Medium',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://medium.com/@kentsui", "_blank");
         },
       },{
         id: 'social-rss',
@@ -522,7 +271,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=y0H5p8MAAAAJ", "_blank");
         },
       },{
         id: 'social-custom_social',
