@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>London, United Kingdom</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
@@ -31,15 +31,16 @@ I aspire to build reliable AI models that benefit humanity.
 For the past six years, my expertise has centered on language models, computer vision (detection, text recognition), data curation, synthetic data generation, and distributed training.
 Prior to this, I specialized in machine learning and statistical modeling for structured data, with applications in credit scoring, stress testing, and anti-attrition modeling.
 
-As an active open-source researcher, I regularly contribute to large language model and vision-language model pretraining and post-training datasets.
+As an active open-source researcher, I regularly contribute to large language model and vision-language model pretraining and post-training datasets, and reasoning benchmarks. 
 
 My earlier career as an external auditor and qualified accountant informs my rigorous, systematic approach to model evaluation and testing, ensuring robust and reliable AI solutions.
 
 My research interests:
-- data efficient pretraining
+- pretraining and post training data curation
+- reasoning benchmark, in particular, self-correction and inductive reasoning
 - vision language model
 - world model
-- reasoning
+
 
 
 [HuggingFace](https://huggingface.co/kenhktsui)  
